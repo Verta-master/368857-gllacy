@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+				</div>
+        <nav class="navigation">
+          <ul>
+						<li>
+							<a href="#">Каталог</a>
+							<ul class="navigation-sub">
+								<li>
+									<a href="#">Новинки</a>
+								</li>
+								<li>
+									<a class="navigation-current" href="#">Сливочное</a>
+								</li>
+								<li>
+									<a href="#">Щербеты</a>
+								</li>
+								<li>
+									<a href="#">Фруктовый лед</a>
+								</li>
+								<li>
+									<a href="#">Мелорин</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">О Компании</a>
+						</li>
+					</ul>
+        </nav>
+				
+        <div class="user-block">
+					<form class="user-search" action="https://echo.htmlacademy.ru" method="post">
+						<input type="search" placeholder="Что ищем?">
+					</form>
+					<p class="user-entry">Вход</p>
+					<form class="user-entry-form" action="https://echo.htmlacademy.ru" method="post">
+						<input type="email" name="email" id="email" placeholder="Электронная почта">
+						<input type="password" name="password" id="password" placeholder="Пароль">
+						<input type="submit" name="submit" id="submit" value="Войти">
+						<a class="user-help" href="#">Забыли пароль?</a>
+						<a class="user-help" href="#">Новая регистрация</a>
+					</form>
+					
+					<div class="user-cart">
+						<a href="#">2 товара</a>
+						<table>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>Пломбир с апельсиновым джемом</td>
+								<td>1,5 кг x 200 руб.</td>
+								<td>300 руб.</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+								<td>1,5 кг x 300 руб.</td>
+								<td>450 руб.</td>							
+							</tr>
+						</table>
+						<p>Итого: 750 руб.</p>
+						<a class="btn" href="#">Оформить заказ</a>
+					</div>
+					
+					<p class="user-time">С 10 до 20, ежедневно</p>
+					<p class="user-phone">8 812 450-25-25</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+			<div class="breadcumbs">
+				<a href="index.html">Главная</a>
+				<a href="#">Каталог</a>
+				<p>Сливочное</p>
+			</div>
+			<h1>Сливочное мороженое</h1>
+			
+			<div class="sorting">
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<label for="variants">Сортировка:</label>
+					<select name="variants" id="variants">
+						<option value="1">по популярности</option>
+						<option value="2">сначала недорогие</option>
+						<option value="3">сначала дорогие</option>
+						<option value="4">по жирности</option>
+					</select>
+					
+					<div class="range">
+						<p>Цена: 100 руб. - 500 руб.</p>
+    				<span class="range-left"></span>
+    				<span class="range-right"></span>
+					</div>
+
+					<fieldset>
+						<legend>Жирность:</legend>
+						<input type="radio" name="zero" id="zero">
+						<label for="zero">0%</label>
+						<input type="radio" name="ten" id="ten" checked>
+						<label for="ten">до 10%</label>
+						<input type="radio" name="thirty" id="thirty">
+						<label for="thirty">до 30%</label>
+						<input type="radio" name="more" id="more">
+						<label for="more">выше 30%</label>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Наполнители:</legend>
+						<input type="checkbox" checked name="choco" id="choco">
+						<label for="choco">шоколадные</label>
+						<input type="checkbox" checked name="sugar" id="sugar">
+						<label for="sugar">сахарные присыпки</label>
+						<input type="checkbox" name="fruit" id="fruit">
+						<label for="fruit">фрукты</label>
+						<input type="checkbox" name="sirop" id="sirop">
+						<label for="sirop">сиропы</label>
+						<input type="checkbox" name="jam" id="jam">
+						<label for="jam">джемы</label>
+					</fieldset>
+					<input type="submit" name="apply" id="apply" value="Применить">
+				</form>
+			</div>
+			
+			<div class="item">
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">310 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/orange-icecream" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+					<figcaption><a class="item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">380 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/coffee-icecream" alt="Сливочно-кофейное с кусочками шоколада"></a>
+					<figcaption><a class="item-name" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">355 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/strawberry-icecream" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+					<figcaption><a class="item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">415 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/candy-icecream" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+					<figcaption><a class="item-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">325 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/orange-icecream" alt="Сливочное с брусничным джемом"></a>
+					<figcaption><a class="item-name" href="#">Сливочное с брусничным джемом</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">410 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/coffee-icecream" alt="Сливочно-черничное с цельными ягодами черники"></a>
+					<figcaption><a class="item-name" href="#">Сливочно-черничное с цельными ягодами черники</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">375 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/strawberry-icecream" alt="Сливочно-лимонное с карамельной присыпкой"></a>
+					<figcaption><a class="item-name" href="#">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">320 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/candy-icecream" alt="Сливочное с шоколадной стружкой"></a>
+					<figcaption><a class="item-name" href="#">Сливочное с шоколадной стружкой</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">440 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/orange-icecream" alt="Сливочно-ванильное с кусочками шоколада"></a>
+					<figcaption><a class="item-name" href="#">Сливочно-ванильное с кусочками шоколада</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">435 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/coffee-icecream" alt="Сливочное с ментоловым сиропом"></a>
+					<figcaption><a class="item-name" href="#">Сливочное с ментоловым сиропом</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">355 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/strawberry-icecream" alt="Сливочное с кусочками черного шоколада"></a>
+					<figcaption><a class="item-name" href="#">Сливочное с кусочками черного шоколада</a></figcaption>
+				</figure>
+				<figure>
+					<p class="item-label">хит</p>
+					<p class="item-price">420 &#8381;/кг</p>
+					<a class="btn" href="#">Быстрый просмотр</a>
+					<a class="item-icecream" href="#"><img src="img/candy-icecream" alt="Сливочное с мятным сиропом"></a>
+					<figcaption><a class="item-name" href="#">Сливочное с мятным сиропом</a></figcaption>
+				</figure>
+			</div>
+			
+			<div class="pagination">
+				<a class="pagination-prev" href="#prev">Назад</a>
+				<a class="pagination-current" href="#1">1</a>
+				<a href="#2">2</a>
+				<a href="#3">3</a>
+				<a href="#4">4</a>
+				<a href="#5">5</a>
+				<a class="pagination-next" href="#next">Вперед</a>
+			</div>
+    </main>
+		
+    <footer class="main-footer">
+      <div class="container">
+				<section class="footer-social">
+					<a class="social social-tw" href="#">Твиттер</a>
+          <a class="social social-in" href="#">Инстаграм</a>
+					<a class="social social-fb" href="#">Фейсбук</a>
+					<a class="social social-vk" href="#">Вконтакте</a>
+        </section>
+				<section class="footer-links">
+					<ul>
+						<li>
+							<a href="#">Для поставщиков</a>
+						</li>
+						<li>
+							<a href="#">О производстве</a>
+						</li>
+						<li>
+							<a href="#">Наши документы</a>
+						</li>
+						<li>
+							<a href="#">Экологические стандарты</a>
+						</li>
+					</ul>
+				</section>
+        <section class="footer-copyright">
+					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" alt="Logo HTML Academy"></a>
+					<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
+        </section>
+      </div>
+    </footer>		
+  </body>
+</html>			
