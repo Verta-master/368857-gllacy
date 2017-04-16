@@ -7,11 +7,9 @@
   <body>
     <header class="main-header">
       <div class="container">
-				<div class="logo">
-					<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
-				</div>
+				<a class="logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
         <nav class="navigation">
-          <ul>
+          <ul class="navigation-main">
 						<li>
 							<a href="#">Каталог</a>
 							<ul class="navigation-sub">
@@ -43,13 +41,13 @@
 				
         <div class="user-block">
 					<form class="user-search" action="https://echo.htmlacademy.ru" method="post">
-						<input type="search" placeholder="Что ищем?">
+						<input type="search" name="search" id="search" placeholder="Что ищем?">
 					</form>
-					<p class="user-entry">Вход</p>
+					<a class="user-entry">Вход</a>
 					<form class="user-entry-form" action="https://echo.htmlacademy.ru" method="post">
 						<input type="email" name="email" id="email" placeholder="Электронная почта">
 						<input type="password" name="password" id="password" placeholder="Пароль">
-						<input type="submit" name="submit" id="submit" value="Войти">
+						<button class="button">Войти</button>
 						<a class="user-help" href="#">Забыли пароль?</a>
 						<a class="user-help" href="#">Новая регистрация</a>
 					</form>
@@ -76,8 +74,8 @@
 						<a class="btn" href="#">Оформить заказ</a>
 					</div>
 					
-					<p class="user-time">С 10 до 20, ежедневно</p>
-					<p class="user-phone">8 812 450-25-25</p>
+					<span class="user-time">С 10 до 20, ежедневно</span>
+					<span class="user-phone">8 812 450-25-25</span>
         </div>
       </div>
     </header>
@@ -86,7 +84,7 @@
 			<div class="breadcumbs">
 				<a href="index.html">Главная</a>
 				<a href="#">Каталог</a>
-				<p>Сливочное</p>
+				<a class="breadcrumbs-current" href="#">Сливочное</a>
 			</div>
 			<h1>Сливочное мороженое</h1>
 			
@@ -101,9 +99,11 @@
 					</select>
 					
 					<div class="range">
-						<p>Цена: 100 руб. - 500 руб.</p>
-    				<span class="range-left"></span>
-    				<span class="range-right"></span>
+						<span>Цена: 100 руб. - 500 руб.</span>
+						<div class="range-style">
+							<span class="range-left"></span>
+    					<span class="range-right"></span>
+						</div>
 					</div>
 
 					<fieldset>
@@ -131,96 +131,84 @@
 						<input type="checkbox" name="jam" id="jam">
 						<label for="jam">джемы</label>
 					</fieldset>
-					<input type="submit" name="apply" id="apply" value="Применить">
+					<button class="button">Применить</button>
 				</form>
 			</div>
 			
-			<div class="item">
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">310 &#8381;/кг</p>
+			<ul class="item">
+				<li>
+					<span class="item-price">310 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/orange-icecream" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
-					<figcaption><a class="item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">380 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				</li>
+				<li>
+					<span class="item-price">380 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/coffee-icecream" alt="Сливочно-кофейное с кусочками шоколада"></a>
-					<figcaption><a class="item-name" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">355 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочно-кофейное с кусочками шоколада</a>
+				</li>
+				<li>
+					<span class="item-price">355 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/strawberry-icecream" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
-					<figcaption><a class="item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">415 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				</li>
+				<li>
+					<span class="item-price">415 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/candy-icecream" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-					<figcaption><a class="item-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">325 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+				</li>
+				<li>
+					<span class="item-price">325 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/orange-icecream" alt="Сливочное с брусничным джемом"></a>
-					<figcaption><a class="item-name" href="#">Сливочное с брусничным джемом</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">410 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочное с брусничным джемом</a>
+				</li>
+				<li>
+					<span class="item-price">410 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/coffee-icecream" alt="Сливочно-черничное с цельными ягодами черники"></a>
-					<figcaption><a class="item-name" href="#">Сливочно-черничное с цельными ягодами черники</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">375 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочно-черничное с цельными ягодами черники</a>
+				</li>
+				<li>
+					<span class="item-price">375 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/strawberry-icecream" alt="Сливочно-лимонное с карамельной присыпкой"></a>
-					<figcaption><a class="item-name" href="#">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">320 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+				</li>
+				<li>
+					<span class="item-price">320 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/candy-icecream" alt="Сливочное с шоколадной стружкой"></a>
-					<figcaption><a class="item-name" href="#">Сливочное с шоколадной стружкой</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">440 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочное с шоколадной стружкой</a>
+				</li>
+				<li>
+					<span class="item-price">440 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/orange-icecream" alt="Сливочно-ванильное с кусочками шоколада"></a>
-					<figcaption><a class="item-name" href="#">Сливочно-ванильное с кусочками шоколада</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">435 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочно-ванильное с кусочками шоколада</a>
+				</li>
+				<li>
+					<span class="item-price">435 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/coffee-icecream" alt="Сливочное с ментоловым сиропом"></a>
-					<figcaption><a class="item-name" href="#">Сливочное с ментоловым сиропом</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">355 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочное с ментоловым сиропом</a>
+				</li>
+				<li>
+					<span class="item-price">355 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/strawberry-icecream" alt="Сливочное с кусочками черного шоколада"></a>
-					<figcaption><a class="item-name" href="#">Сливочное с кусочками черного шоколада</a></figcaption>
-				</figure>
-				<figure>
-					<p class="item-label">хит</p>
-					<p class="item-price">420 &#8381;/кг</p>
+					<a class="item-name" href="#">Сливочное с кусочками черного шоколада</a>
+				</li>
+				<li>
+					<span class="item-price">420 &#8381;/кг</span>
 					<a class="btn" href="#">Быстрый просмотр</a>
 					<a class="item-icecream" href="#"><img src="img/candy-icecream" alt="Сливочное с мятным сиропом"></a>
-					<figcaption><a class="item-name" href="#">Сливочное с мятным сиропом</a></figcaption>
-				</figure>
-			</div>
+					<a class="item-name" href="#">Сливочное с мятным сиропом</a>
+				</li>
+			</ul>
 			
 			<div class="pagination">
 				<a class="pagination-prev" href="#prev">Назад</a>
@@ -259,9 +247,9 @@
 				</section>
         <section class="footer-copyright">
 					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" alt="Logo HTML Academy"></a>
-					<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
+					<span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</span>
         </section>
       </div>
-    </footer>		
+    </footer>
   </body>
-</html>			
+</html>
