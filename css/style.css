@@ -1,0 +1,19 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #000000;
+	font-weight: normal;
+	font-family: Roboto, "Arial", sans-serif;
+}
+
+.slider-name {
+	font-size: 60px;
+	line-height: 60.35px;
+	color: #ffffff;
+}
+
+.banner-name {
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
+}
