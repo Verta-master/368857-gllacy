@@ -22,44 +22,6 @@ body {
 	text-shadow: 0 2px 10px rgba(172, 16, 0, 0.64);
 }
 
-.slider {
-	width: 1045px;
-	height: 881px;
-	margin: 0 auto;
-	margin-top: -80px;
-	background: url(../img/slide1.png) no-repeat center center;
-}
-
-.slider .btn {
-	font-size: 32px;
-	width: 280px;
-	padding: 20px 0;
-	margin: 0 auto;
-	margin-bottom: 35px;
-}
-
-.slider-name {
-	display: inline-block;
-	vertical-align: middle;
-	margin-top: 320px;
-	margin-left: 60px;
-	font-size: 60px;
-	font-weight: bold;
-	line-height: 60.35px;
-	color: #ffffff;
-	margin-bottom: 30px;
-}
-
-.slider-name li {
-	list-style-type: none;
-	text-align: center;
-}
-
-.slider-name li:nth-child(2),
-.slider-name li:nth-child(3) {
-	display: none;
-}
-
 .banner-name {
 	font-size: 35px;
 	line-height: 41px;
@@ -79,6 +41,42 @@ body {
 	content: "";
 }
 
+.slider {
+	float: left;
+	width: 1045px;
+	height: 881px;
+	margin-left: auto;
+	margin-top: -130px;
+	margin-bottom: -150px;
+	background: url(../img/slide1.png) no-repeat;
+}
+
+.slider .btn {
+	font-size: 32px;
+	width: 280px;
+	padding: 20px 0;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+.slider-name li {
+	margin-top: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 60.35px;
+	color: #ffffff;
+	margin-bottom: 30px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.slider-name li:nth-child(2),
+.slider-name li:nth-child(3) {
+	display: none;
+}
+
 .logo {
 	float: left;
 	margin-right: 20px;
@@ -89,6 +87,7 @@ body {
 	float: left;
 	padding: 0;
 	margin: 0;
+	margin-top: 10px;
 	list-style-type: none;
 }
 
@@ -96,7 +95,6 @@ body {
 	display: inline-block;
 	margin-right: 25px;
 	vertical-align: middle;
-	margin-top: 10px;
 }
 
 .navigation-main a,
@@ -118,19 +116,22 @@ body {
 
 .user-block {
 	float: right;
-	width: 450px;
+	width: 360px;
 	margin: 0;
 	padding: 0;
+	margin-top: 10px;
 }
 
 .user-fields li {
-	display: inline-block;
-	vertical-align: middle;
+	float: right;
+	list-style-type: none;
 	background-color: #9db1a5;
 	border-radius: 20px;
 	height: 30px;
 	padding-top: 5px;
 	margin-left: 10px;
+	margin-right: 0;
+	margin-top: 0;
 	text-align: center;
 	font-size: 14px;
 	font-weight: normal;
@@ -172,8 +173,10 @@ body {
 
 .user-info {
 	float: right;
+	margin: 0;
 	margin-top: 15px;
-	width: 180px;
+	width: 290px;
+	text-align: right;
 }
 
 .user-time {
@@ -186,12 +189,6 @@ body {
 	font-size: 22px;
 	color: #ffffff;
 	font-weight: bold;
-}
-
-.main {
-	width: 1200px;
-	margin: 0;
-	padding: 0;
 }
 
 .breadcrumbs {
@@ -438,10 +435,12 @@ h2 {
 	width: 125px;
 }
 
-.feedback img {
+.feedback {
 	display: block;
 	margin: 0 auto;
 	width: 1200px;
+	height: 430px;
+	background: url(../img/map.jpg) no-repeat;
 }
 
 .feedback p {
@@ -454,6 +453,8 @@ h2 {
 	border-radius: 15px;
 	padding-top: 30px;
 	padding-left: 20px;
+	margin-left: 860px;
+	margin-top: 50px;
 }
 
 .feedback>p>span {
@@ -464,6 +465,10 @@ h2 {
 
 .feedback .btn {
 	width: 250px;
+}
+
+.feedback p a {
+	margin-top: 35px;
 }
 
 .pagination {
