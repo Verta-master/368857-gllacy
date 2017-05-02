@@ -254,21 +254,6 @@ body {
 .user-fields li {
 	float: right;
 	list-style-type: none;
-	background-color: rgba(255,255,255,0.2);
-	border-radius: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-left: 10px;
-	margin-right: 0;
-	margin-top: 0;
-	text-align: center;
-	font-size: 14px;
-	font-weight: normal;
-	position: relative;
-}
-
-.user-fields li:not(:first-child):hover {
-	background-color: #ffffff;
 }
 
 .user-search-form,
@@ -277,22 +262,23 @@ body {
 }
 
 .user-search {
-	background: url(../img/spritesheet.png) no-repeat;
+	background: rgba(255,255,255,0.2) url(../img/spritesheet.png) no-repeat center;
 	width: 17px;
 	height: 17px;
-	background-position: -700px -5px;
-	padding: 0 17px;
+	background-position: -703px 0px;
+	padding: 5px 15px;
+	border-radius: 20px;
+	position: relative;
 }
 
 .user-search:hover {
-	background: url(../img/spritesheet.png) no-repeat;
+	background: #ffffff url(../img/spritesheet.png) no-repeat;
 	width: 17px;
 	height: 17px;
-	background-position: -727px -5px;
+	background-position: -730px 0px;
 }
 
-.search:hover .user-search-form {
-/*.user-search:hover+.user-search-form {*/
+.user-search:hover+.user-search-form {
 	display: block;
 	position: absolute;
 	right: 0px;
@@ -316,24 +302,35 @@ body {
 
 .user-entry {	
 	position: relative;
-	padding-left: 32px;
+	padding-left: 42px;
 	width: 90px;
-	margin: 0 16px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 13px;
+	margin-left: 10px;
+	margin-right: 0;
+	margin-top: 0;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
 }
 
 .user-entry::before {
 	content: "";
 	position: absolute;
-	background: url(../img/spritesheet.png) no-repeat;
+	background: url(../img/spritesheet.png) no-repeat center;
 	width: 21px;
 	height: 19px;
-	left: 0;
+	left: 10px;
 	background-position: -148px -5px;
 }
 
 .user-entry:hover {
 	color: #000000;
 	cursor: pointer;
+	background-color: #ffffff;
 }
 
 .user-entry:hover::before {
@@ -394,18 +391,25 @@ body {
 
 .user-fields a {
 	color: #ffffff;
-	font-weight: bold;
+	font-weight: normal;
 	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 .user-cart {
 	display: inline-block;
 	position: relative;
-	padding-left: 30px;
-	margin: 0 31px;
+	padding-left: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-left: 15px;
-	width: 40px;
+	width: 116px;
 	white-space: nowrap;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 20px;
+	text-align: center;
+	padding-right: 10px;
 }
 
 .user-cart::before {
@@ -413,13 +417,15 @@ body {
 	width: 21px;
 	height: 20px;
 	position: absolute;
-	background: url(../img/spritesheet.png) no-repeat;
-	left: 0;
+	background: url(../img/spritesheet.png) no-repeat center;
+	left: 10px;
 	background-position: -26px -5px;
 }
 
 .user-fields .cart-full {
 	background-color: rgba(255,255,255,1);
+	border-radius: 20px;
+	margin-left: 10px;
 }
 
 .cart-full a {
@@ -1220,6 +1226,7 @@ body {
 	cursor: pointer;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	appearance: none;
 	text-indent: 0.01px;
 	text-overflow: "";
 	background: rgba(255,255,255,0.2) url(../img/arrow.png) no-repeat;
