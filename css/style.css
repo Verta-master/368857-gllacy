@@ -65,17 +65,34 @@ body {
 
 .wrapper {
 	background: url(../img/slide1.png) no-repeat;
-	background-position: top center; 
+	background-position: top center;
+	transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  visibility: hidden;
+}
+
+.wrapper::before {
+  background-image: url(../img/slide2.png);
+}
+
+.wrapper::after {
+  background-image: url(../img/slide3.png);
 }
 
 .slider {
-	float: left;
-	width: 1146px;
-	margin: 0 auto;
+	position: relative;
+  padding-top: 270px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .slider .btn {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	font-size: 32px;
 	width: 280px;
 	padding: 20px 0;
@@ -83,70 +100,72 @@ body {
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -40px;
+	margin-top: 0px;
 }
 
-.slider-name li {
-	margin-top: 275px;
-	padding-right: 43px;
+.slider-name {
 	font-size: 60px;
 	font-weight: bold;
 	line-height: 60.35px;
 	color: #ffffff;
-	margin-bottom: 0;
-	list-style-type: none;
-	text-align: center;
+	width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.slider-name li:nth-child(2),
-.slider-name li:nth-child(3) {
-	display: none;
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.slider-toggle input {
-	display: none;
+.slider-controls {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
 }
 
-.slider-toggle {
-	display: block;
-	width: 16px;
-	height: 16px;
-	margin-top: 51px;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
-	background-color: #ffffff;
-	position: relative;
+body > input[type="radio"] {
+  display: none;
 }
 
-.slider-toggle::before {
-	content: "";
-	display: block;
-	width: 16px;
-	height: 16px;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
-	position: absolute;
-	left: 28px;
-	top: -1px;
+.slide {
+  display: none;
 }
 
-.slider-toggle:hover,
-.slider-toggle:hover::before,
-.slider-toggle:hover::after {
-	background-color: rgba(255,255,255,0.4);
-	cursor: pointer;
+#btn-1:checked ~ .wrapper #slide1,
+#btn-2:checked ~ .wrapper #slide2,
+#btn-3:checked ~ .wrapper #slide3 {
+  display: block;
 }
 
-.slider-toggle::after {
-	content: "";
-	display: block;
-	width: 16px;
-	height: 16px;
-	border: 2px solid #ffffff;
-	border-radius: 50%;
-	position: absolute;
-	left: 56px;
-	top: -1px;
+#btn-1:checked ~ .wrapper label[for="btn-1"],
+#btn-2:checked ~ .wrapper label[for="btn-2"],
+#btn-3:checked ~ .wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+#btn-1:checked ~ .wrapper {
+  background-color: #849d8f;
+  background-image: url(../img/slide1.png);
+}
+
+#btn-2:checked ~ .wrapper {
+  background-color: #8996a6;
+  background-image: url(../img/slide2.png);
+}
+
+#btn-3:checked ~ .wrapper {
+  background-color: #9d8b84;
+  background-image: url(../img/slide3.png);
 }
 
 .logo {
@@ -218,9 +237,8 @@ body {
 	padding-bottom: 1px;
 }
 
-.navigation-main .navigation-sub {
+.navigation-sub {
 	display: none;
-	vertical-align: middle;
 	background: #ffffff;
 	border-radius: 5px;
   background-color: rgb(248, 247, 244);
@@ -229,7 +247,17 @@ body {
 	max-width: 143px;
 	margin: 0;
 	padding: 0;
-	top: 45px;
+	top: 25px;
+}
+
+.navigation-sub li:first-child a {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.navigation-sub li:last-child a {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 .navigation-sub a {
@@ -237,10 +265,20 @@ body {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+	width: 119px;
 }
 
 .navigation-sub a:hover {
 	border-radius: 0;
+}
+
+.navigation-main li:hover>.navigation-sub {
+	display: block;
+}
+
+.navigation-sub li:first-child>a {
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .user-block {
@@ -278,7 +316,8 @@ body {
 	background-position: -730px 0px;
 }
 
-.user-search:hover+.user-search-form {
+/*.user-search:hover+.user-search-form {*/
+.user-fields .user-search:hover>.user-search-form {
 	display: block;
 	position: absolute;
 	right: 0px;
