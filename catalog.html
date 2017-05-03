@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div class="container clearfix">
-				<a class="logo" href="index.html"><img src="img/Logo.png" alt="Logo" width="154" height="64"></a>
+				<a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" width="154" height="64"></a>
         <nav class="navigation">
           <ul class="navigation-main">
 						<li class="active">
@@ -20,7 +20,7 @@
 									<a href="#"><span>Новинки</span></a>
 								</li>
 								<li>
-									<a class="navigation-current" href="#"><span>Сливочное</span></a>
+									<a class="navigation-current"><span>Сливочное</span></a>
 								</li>
 								<li>
 									<a href="#"><span>Щербеты</span></a>
@@ -117,8 +117,11 @@
 					<div class="range">
 						<span>Цена: 100 руб. – 500 руб.</span>
 						<div class="range-style sorting-bk">
-							<span class="range-left"></span>
-    					<span class="range-right"></span>
+							<div class="scale">
+            		<div class="bar"></div>
+          		</div>
+							<div class="toggle toggle-min"></div>
+          		<div class="toggle toggle-max"></div>
 						</div>
 					</div>
 
@@ -231,8 +234,8 @@
 			</ul>
 			
 			<div class="pagination">
-				<a class="pagination-prev" href="#prev"></a>
-				<a class="pagination-current" href="#1">1</a>
+				<a class="pagination-prev disabled"></a>
+				<a class="pagination-current">1</a>
 				<a href="#2">2</a>
 				<a href="#3">3</a>
 				<a href="#4">4</a>

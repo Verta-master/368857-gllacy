@@ -15,7 +15,7 @@
 		<div class="wrapper">
 			<header class="main-header">
 				<div class="container clearfix">
-					<img class="logo" src="img/Logo.png" alt="Logo" width="154" height="64">
+					<img class="logo" src="img/logo.png" alt="Logo" width="154" height="64">
 					<nav class="navigation">
 						<ul class="navigation-main">
 							<li>
@@ -95,17 +95,6 @@
             <label for="btn-2"></label>
             <label for="btn-3"></label>
           </div>
-		<!--			<ul class="slider-name">
-						<li>Крем-брюле и пломбир<br>с малиновым джемом</li>
-						<li>Шоколадный пломбир<br>и лимонный сорбет</li>
-						<li>Пломбир с помадкой<br>и клубничный щербет</li>
-					</ul>
-					<div class="slider-toggle">
-						<input type="radio" checked name="slide1" id="slide1">
-						<input type="radio" name="slide2" id="slide2">
-						<input type="radio" name="slide3" id="slide3"> 
-					</div>
-					<a class="btn">Давайте оба!</a> -->
 				</div>
 				
 				<div class="banner clearfix">
@@ -216,11 +205,16 @@
     </footer>
 		
 		<form class="feedback-modal" action="https://echo.htmlacademy.ru" method="post">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 			<h2>Мы обязательно вам ответим!</h2>
 			<input type="text" name="yourname" id="yourname" placeholder="Как вас зовут?">
+			<label for="yourname">Как вас зовут?</label>
 			<input type="email" name="youremail" id="youremail" placeholder="Ваша почта для ответа?">
-			<textarea rows="10">Напишите что-нибудь...</textarea>
+			<label for="youremail">Ваша почта для ответа?</label>
+			<textarea id="yourtext" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+			<label for="yourtext">Напишите что-нибудь...</label>
 			<button class="btn">Отправить</button>
 		</form>
+		<div class="modal-overlay"></div>
   </body>
 </html>
