@@ -910,7 +910,14 @@ body > input[type="radio"] {
 }
 
 .item:not(.item-main) .item-index {
-	margin-bottom: 16px;
+	margin-bottom: 15px;
+}
+
+.item:not(.item-main) .item-index:nth-child(5),
+.item:not(.item-main) .item-index:nth-child(6),
+.item:not(.item-main) .item-index:nth-child(7),
+.item:not(.item-main) .item-index:nth-child(8) {
+	margin-bottom: 19px;
 }
 
 .item-icecream img {
@@ -1326,7 +1333,7 @@ body > input[type="radio"] {
 
 .pagination {
 	float: right;
-	margin-top: 67px;
+	margin-top: 66px;
 	margin-bottom: 31px;
 	width: 187px;
 }
@@ -1845,7 +1852,7 @@ body > input[type="radio"] {
 }
 
 .sorting-fat legend {
-	padding-left: 17px;
+	padding-left: 15px;
 }
 
 .sorting-fill legend {
@@ -1927,15 +1934,17 @@ body > input[type="radio"] {
 }
 
 .sorting-fill {
-	float: left;
+	display: inline-block;
+	vertical-align: bottom;
 	padding: 0;
-	margin-right: 14px;
+	margin-right: 10px;
 }
 
 .button {
-	float: left;
+	display: inline-block;
+	vertical-align: bottom;
 	color: #ffffff;
-	width: 142px;
+	width: 144px;
 	border: 2px solid #ffffff;
 	border-radius: 20px;
 	background-color: #aabab0;
@@ -1943,7 +1952,7 @@ body > input[type="radio"] {
 	cursor: pointer;
 	font-size: 16px;
 	line-height: 30px;
-	margin-left: 5px;
+	margin-left: 0px;
 	font-weight: normal;
 	font-family: "Roboto", "Arial", sans-serif;
 }
@@ -1973,8 +1982,15 @@ input[type="checkbox"]+label {
 	margin-right: 17px;
 }
 
-input[type="checkbox"]+label:nth-of-type(3),
+input[type="checkbox"]+label:nth-of-type(3) {
+	margin-left: 3px;
+}
+
 input[type="checkbox"]+label:nth-of-type(4) {
+	margin-left: 5px;
+}
+
+input[type="checkbox"]+label:nth-of-type(5) {
 	margin-left: 3px;
 }
 
@@ -2030,6 +2046,14 @@ input[type="checkbox"]:not(:checked)+label::before {
 	background-color: transparent;
 }
 
+input[type="checkbox"]:nth-of-type(5):not(:checked)+label::before {
+	left: 0px;
+}
+
+input[type="checkbox"]:nth-of-type(5):not(:checked)+label::before {
+	left: -2px;
+}
+
 input[type="checkbox"]:hover+label:hover::before {
 	border: 2px solid #ffffff;
 	width: 16px;
@@ -2046,6 +2070,10 @@ input[type="checkbox"]:checked+label::after {
 	background-position: -88px -5px;
 	width: 20px;
 	height: 20px;
+}
+
+input[type="checkbox"]:nth-of-type(5):checked:hover+label:hover::after {
+	left: -2px;
 }
 
 input[type="checkbox"]:checked:hover+label:hover::after {
