@@ -966,6 +966,8 @@ body > input[type="radio"]
 
 .cart-table .cart-img
 {
+  width: 33px;
+  height: 33px;
   padding-left: 9px;
 }
 
@@ -982,8 +984,15 @@ body > input[type="radio"]
   border-radius: 50%;
 }
 
+.cart-table .cart-cross
+{
+  width: 11px;
+  height: 11px;
+}
+
 .cart-table .cart-name
 {
+  width: 230px;
   padding-right: 0;
   padding-left: 9px;
 }
